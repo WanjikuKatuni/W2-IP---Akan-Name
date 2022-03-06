@@ -26,12 +26,12 @@ const logSubmit = function (event){
     const formDate = document.getElementById('date').value
     const formGender = document.getElementById('gender').value
 
-
+    if(formDate === "" || formGender === "") {
+        alert("required fields are empty")
+    }
     
     const day = getDay(formDate)
 
-    console.log(day)
-    console.log(formGender)
     var akanName = ""
 
     if (formGender === 'M') {
