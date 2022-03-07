@@ -23,33 +23,41 @@
   </head>
 
   <body>
-    <
     <h1>Akan Name Generator</h1>
-    <p>
-      The Akan people of Ghana frequently name their children after the day of
-      the week they were born and the order in which they were born. These "day
-      names" have further meanings concerning the soul and character of the
-      person.
-    </p>
-    <p>Follow these steps to find out which Akan name you belong to.</p>
-    <!-- Insert Form -->
-    <form id="akanform">
-      Date:
-      <input type="text" placeholder="dd/mm/yyyy" id="date" />
-      <!-- new line using break  -->
-      <br />
-      <br />
-      Gender:
-      <select id="gender">
-        <option selected>Select Gender</option>
-        <option value="M">Male</option>
-        <option value="F">Female</option>
-      </select>
-      <!-- new line using break  -->
-      <br />
-      <br />
-      <button type="submit">Generate Akan Name</button>
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                    <p>
+                    The Akan people of Ghana frequently name their children after the day of
+                    the week they were born and the order in which they were born. These "day
+                    names" have further meanings concerning the soul and character of the
+                    person.
+                    </p>
+                    <p>Follow these steps to find out which Akan name you belong to.</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Insert Form -->
+                <form id="akanform">
+                    Date:
+                    <input type="text" placeholder="dd/mm/yyyy" id="date" />
+                    <!-- new line using break  -->
+                    <br />
+                    <br />
+                    Gender:
+                    <select id="gender">
+                    <option selected>Select Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    </select>
+                    <!-- new line using break  -->
+                    <br />
+                    <br />
+                     <button type="submit">Generate Akan Name</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="JS/script.js"></script>
   </body>
