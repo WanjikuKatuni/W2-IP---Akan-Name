@@ -39,10 +39,13 @@ const logSubmit = function (event) {
   ];
   const formDate = document.getElementById("date").value;
   const formGender = document.getElementById("gender").value;
+  console.log(formGender)
 
-  if (formDate === "" || formGender === "") {
+  if (formDate === "" || formGender === "na") {
     alert("required fields are empty");
+    return
   }
+  
 
   const day = getDay(formDate);
 
