@@ -18,42 +18,76 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>AKAN NAMES</title>
+    <style>
+        body {
+ background-image: url("images/thumb.jpg");
+ background-color: #e1ad01;
+}
+    </style>
   </head>
 
   <body>
-    <h1 style="text-align:center; color:#4B371C;">Akan Name Generator</h1>
+    <h1 style="text-align:center; color:#fad9af; font-size: 60px;">Akan Name Generator</h1>
     <br>
     <br>
     <br>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-body">
-                        <p>
+                    <div class="card-body" style="color: white;">
+                        <h3>
                             The Akan people of Ghana frequently name their children after the day of
                             the week they were born and the order in which they were born. These "day
                             names" have further meanings concerning the soul and character of the
                             person.
-                            </p>
+                        </h3>
+                        <br>
+                        <h5>Some of the Ghanaina Akan Names include:</h5>
+                        <ul>
+                            <li><h5>Male Names</h5></li>
+                            <li>Sunday: Kwasi</li>
+                            <li>Monday: Kwadwo</li>
+                            <li>Tuesday: Kwabena</li>
+                            <li>Wednesday: Kwaku</li>
+                            <li>Thursday: Yaw</li>
+                            <li>Friday: Kofi</li>
+                            <li>Saturday: Kwa</li>
+                        </ul>
+                        <ul>
+                            <li><h5>Female Names</h5></li>
+                            <li>Sunday: Akosua</li>
+                            <li>Monday: Adwoa</li>
+                            <li>Tuesday: Abenaa</li>
+                            <li>Wednesday: Akua</li>
+                            <li>Thursday: Yaa</li>
+                            <li>Friday: Afua</li>
+                            <li>Saturday: Ama</li>
+                        </ul>
                     </div>
                 </div>  
             </div>
             <div class="col-md-6">
-                <div class="card">
+                <div class="card" style="color: white;">
                     <div class="card-body">
-                        <p>Follow these steps to find out which Akan name you belong to.</p>
+                        <h3 style="text-align:justify;">Follow these steps to find out which Akan name you belong to.</h3>
+                        <br>
+                        <br>
+                        <br>
                         <!-- Insert Form -->
                         <form id="akanform">
-                            Date:
+                            <p><strong>Date:</strong>:</p>
                             <input type="text" placeholder="dd/mm/yyyy" id="date" />
                             <!-- new line using break  -->
                             <br />
                             <br />
-                            Gender:
-                            <select id="gender">
+                            <br />
+                            <p><strong>Gender:</strong></p>
+                            <select id="gender" class="btn btn-secondary">
                             <option selected>Select Gender</option>
                             <option value="M">Male</option>
                             <option value="F">Female</option>
@@ -61,8 +95,12 @@
                             <!-- new line using break  -->
                             <br />
                             <br />
-                            <button type="submit">Generate Akan Name</button>
+                            <br />
+                            <button type="submit" class="btn btn-warning"><strong>  Generate Akan Name</strong></button>
                         </form>
+                    </div>
+                    <div class="card-footer">
+                       
                     </div>
                 </div>
             </div>
