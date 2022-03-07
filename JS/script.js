@@ -4,12 +4,14 @@ const getDay = function (date) {
 
   if (parts.length != 3) {
     alert("not a valid date");
+    return
   }
   var dt = new Date(date);
-  const dd = parts[0];
-  const mm = parts[1];
+
+  const mm = parts[0];
   if (parts[2].length != 4 || mm < 1 || mm > 12) {
     alert("wrong date format");
+    return
   }
 
   return dt.getDay();
@@ -39,14 +41,12 @@ const logSubmit = function (event) {
   ];
   const formDate = document.getElementById("date").value;
   const formGender = document.getElementById("gender").value;
-  console.log(formGender)
 
   if (formDate === "" || formGender === "na") {
     alert("required fields are empty");
     return
   }
   
-
   const day = getDay(formDate);
 
   var akanName = "";
